@@ -1,0 +1,23 @@
+//
+//  PrefixHeader.pch
+//  Cliquemix
+//
+//  Created by Dejan Atanasov on 2/28/15.
+//  Copyright (c) 2015 Cliquemix. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#define isiPhone4s  ([[UIScreen mainScreen] bounds].size.height == 480)?TRUE:FALSE
+#define GREEN_COLOR  [[UIColor greenColor] colorWithAlphaComponent:.7]
+#define BLUE_COLOR  [[UIColor blueColor] colorWithAlphaComponent:.5]
+#define RED_COLOR  [[UIColor redColor] colorWithAlphaComponent:.7]
+
+#endif
